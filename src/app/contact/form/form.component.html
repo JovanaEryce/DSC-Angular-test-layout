@@ -1,0 +1,65 @@
+
+
+<div class="col span_1_of_2 first">
+    <div class="contact__wrap">
+        <h2>Project Enquiry</h2>
+        <p>Please fill in all fields marke
+            <span class="required first__required">*</span>
+        </p>
+        <p>Your information will be used for our reference only.</p>
+        <form>
+            <label for="fullName">Full Name:</label>
+            <span class="required">*</span>
+            <input ngModel name="fullName" id="fullName" #fullName='ngModel' (change)="log(fullName)" type="text">
+            <label for="email">Email:</label>
+            <span class="required">*</span>
+            <input id="email" type="text">
+            <label for="phone">Telephone:</label>
+            <span class="required">*</span>
+            <input id="phone" type="text">
+        </form>
+        <div class="input__wrap">
+            <div class="span_1_of_2">
+                <label for="type-field">Project Type:</label>
+                <span class="select__area">
+                    <span class="select__area--img">
+                        Web Design
+                    </span>
+                    <a class="select__opener--contact">
+                    </a>
+                    <select class="select__filter">
+                        <option>Recent Updates</option>
+                        <option>User Interface Design</option>
+                        <option>Web Design</option>
+                        <option>Brand Identity</option>
+                        <option>Design Production</option>
+                    </select>
+                </span>
+            </div>
+            <div class="span_1_of_2">
+                <label for="type-field">Project Budget (£):</label>
+                <span class="select__area">
+                    <span class="select__area--img">
+                        £500 - £1000
+                    </span>
+                    <a class="select__opener--contact">
+                    </a>
+                    <select class="select__filter">
+                        <option>£500 - £1000</option>
+                        <option>£1000 - £3000</option>
+                        <option>£3000 - £5000</option>
+                        <option>£5000 - £10 000</option>
+                        <option>N/A</option>
+                    </select>
+                </span>
+            </div>
+        </div>
+        <label for="details-field" accesskey="C">Project Details / Brief</label>
+        <span class="required last__required">*</span>
+        <textarea name="comments" id="comments" rows="3" cols="30" style="min-height:25rem;"></textarea>
+        <p>Are you human?</p>
+        <label for="verify" accesskey="V">&nbsp;&nbsp;&nbsp;3 + 1 =</label>
+        <input name="verify" type="text" id="verify" size="4" value="" style="width: 40px;">
+        <input type="submit" id="submit" value="Submit">
+    </div>
+</div>

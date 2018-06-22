@@ -1,0 +1,211 @@
+/*Panel*/
+.panel__holder {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(204,204,204,1);
+    border-bottom: 1px solid #bebdbd;
+    
+}
+
+.panel__holder > ul {
+    list-style: none;
+    margin: 0;
+    padding: 4px 0 12px 4px;
+    display: inline-flex;
+}
+
+.panel__holder >ul >li:first-child {
+    margin: 0;
+}
+
+.panel__holder > ul > li {
+    margin: 0 0 0 26px;
+}
+
+.panel__holder > ul >li > a {
+    background: url(assets/img/sprite.png) no-repeat 0 -61px;
+    display: block;
+    text-indent: -9999px;
+    width: 45px;
+    height: 37px;
+    position: relative;
+}
+
+.panel__holder > ul > li > a > img {
+    width: 50%;
+}
+
+.ui-design {
+    background-position: -91px -61px !important;
+    width: 25px !important;
+}
+
+.respsonive-design {
+    background-position: -49px -59px !important;
+    width: 41px !important;
+}
+
+.brand {
+    background-position: -120px -60px !important;
+    width: 30px !important;
+}
+
+.creative {
+    background-position: -151px -61px !important;
+    width: 37px;
+}
+
+.panel__holder >ul > li > a >span {
+    width: 100px;
+    height: auto;
+    line-height: 20px;
+    padding: 10px;
+    left: 50%;
+    margin-left: -64px;
+    font-family: 'Alegreya SC', Georgia, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    color: #ffff00;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 4px solid #000;
+    background: rgba(0,0,0,0.9);
+    text-indent: 0px;
+    border-radius: 5px;
+    position: absolute;
+    pointer-events: none;
+    bottom: -30px;
+    opacity: 0;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+panel_holder > ul > li > a > span::before::after{
+    content: '';
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0,0,0,1);
+}
+
+.select__area {
+    background: #fed703;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 37px;
+    float: left;
+    color: #333;
+    z-index: 10;
+    float: left;
+    height: 40px;
+    width: 284px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select__opener {
+    z-index: 2;
+    position: absolute;
+    height: 70px;
+    width: 30px;
+    right: 0px;
+    z-index: 2;
+    background: #fff;
+}
+
+.select__opener::after {
+    content: '';
+    background: url(assets/img/sprite.png) no-repeat -8px 0;
+    position: absolute;
+    left: 3px;
+    top: 14px;
+    width: 24px;
+    height: 16px;
+}
+
+form {
+    grid-column: 6/7;
+    justify-self: end;
+}
+
+.select__filter {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0;
+    border: none;
+    position: absolute;
+    width: 283px;
+    height: 49px;
+}
+
+.select__filter:after {
+    content: '';
+    background: #f2f2ef;
+    width: 42px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+fieldset {
+    font: 16px/18px Cambria, Georgia, Times, serif;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+
+.select__area--img {
+    align-self: center;
+    padding-left: 1rem;
+}
+
+.select__area--img > img {
+    vertical-align: middle;
+}
+
+
+/*Media Query*/
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+
+    .panel {
+        padding: 0;
+    }
+
+    .panel__holder {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (width:375px){
+      .panel__holder {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (width: 640px) {
+    .panel__holder {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+}

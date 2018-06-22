@@ -1,0 +1,50 @@
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+.col {
+    padding: 1em 0;
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:nth-child(1) {
+    margin-left: 0;
+}
+
+.trust__me {
+    height: 450px;
+    background: #333 url(assets/img/diztinct-communication-value.gif) no-repeat;
+    background-position: 185px 50px;
+    color: #fff;
+    padding-right: 10rem;
+    padding-left: 2rem;
+    min-height: 250px;
+}
+
+.trust__me > strong {
+    line-height: 4rem;
+}
+
+.trust__me > a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 10rem;
+    margin: 2rem;
+    height: 3rem;
+    color: #fff;
+    background: #666;
+    border-bottom: 3px solid rgb(80, 80, 80);
+    padding: .7rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;  
+}
+
+.trust__me > a:hover {
+    background: #ffCC00;
+}

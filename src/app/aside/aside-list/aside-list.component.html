@@ -1,0 +1,15 @@
+ <!--Section Aside-->
+ <div class="section group aside">
+    <div class="col span_1_of_4" *ngFor="let aside of asides">
+
+        <div class="asside__item">
+            <a href="#">
+                <img [src]="aside.imagePath" alt="{{ aside.name }}">
+                <strong>{{ aside.name }}</strong>
+                <span>{{ aside.description }}</span>
+            </a>
+        </div>
+    </div>
+
+
+      

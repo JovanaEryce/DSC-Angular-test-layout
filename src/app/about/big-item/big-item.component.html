@@ -1,0 +1,13 @@
+
+    <div class="col span_1_of_2" *ngFor="let about of abouts">
+        <div class="box__large"  >
+            <img class="img" [src]="about.imagePath" alt="{{about.title}}" width="590px" height="349px">
+            <div class="box__text">
+                <a href="#">
+                    <strong>{{ about.title }}</strong>
+                </a>
+                <p>{{ about.description }}
+                </p>
+            </div>
+        </div>
+    </div>

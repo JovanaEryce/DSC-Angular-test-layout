@@ -1,0 +1,8 @@
+<div class="col span_1_of_4" *ngFor="let about of abouts">
+  <div class="box__small">
+      <a href="#" class="item__box--imgabout">
+          <img [src]="about.imagePath" alt="{{ about.title }}">
+      </a>
+      <span>{{ about.title }}</span>
+  </div>
+</div>

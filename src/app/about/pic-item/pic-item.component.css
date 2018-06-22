@@ -1,0 +1,24 @@
+.col:first-child { margin-left: 1.6%; } 
+
+.box__large--img {
+    position: relative;
+}
+
+.box__large--img > img {
+    width: 100%;
+}
+
+.holder__about {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(199, 171, 41, 0.9);
+    width: 50%;
+    padding-bottom: 10rem;
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+}
+
+.span_1_of_2 {
+    width: 49.2%;
+}

@@ -1,0 +1,11 @@
+<div class="section group content__index">
+  <div class="col span_1_of_6 " *ngFor="let article of articles">
+      <div class="item__box" >
+          <div class="hover__icon"></div>
+          <a href="#" class="item__box--img">
+              <img [src]="article.imagePath" alt="{{ article.name }}"> 
+          </a>
+          <span>{{ article.name }}</span>
+      </div>
+  </div>
+</div>
